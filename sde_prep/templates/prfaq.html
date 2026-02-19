@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}SDE Prep Tool - Press Release & FAQ{% endblock %}
+{% block description %}Learn about the SDE Prep Tool - an integrated interview preparation platform for software engineers.{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-12">
+
+  <!-- Press Release Section -->
+  <section class="mb-16">
+    <h2 class="text-4xl font-bold mb-8">📰 Press Release</h2>
+
+    <div class="border-t border-gray-300 pt-8 mb-8">
+      <p class="font-semibold mb-4">FOR IMMEDIATE RELEASE</p>
+
+      <h3 class="text-2xl font-bold mb-4 mt-6">
+        Harsha Cheruku Launches SDE Prep Tracker: The First Integrated Interview Preparation Platform
+      </h3>
+
+      <p class="text-gray-600 italic mb-6">
+        A 12-week structured learning system combining LeetCode tracking, system design mastery, behavioral prep, and real-time progress analytics—all in one place
+      </p>
+
+      <p class="mb-4"><strong>San Francisco, CA</strong> — Harsha Cheruku today announced the launch of the <strong>SDE Prep Tracker</strong>, a comprehensive software engineering interview preparation tool now live at fullstackpm.tech/tools/sde-prep.</p>
+
+      <p class="mb-4">
+        The SDE Prep Tracker addresses a critical gap in interview preparation: most engineers juggle multiple tools (LeetCode, notion docs, spreadsheets, YouTube playlists) to prepare for technical interviews. This fragmentation leads to lost focus, scattered progress tracking, and no holistic view of interview readiness.
+      </p>
+
+      <h4 class="text-xl font-bold mt-6 mb-3">🎯 Complete Coverage</h4>
+      <ul class="space-y-2 mb-4 text-gray-700">
+        <li>✓ <strong>LeetCode Tracking:</strong> 60+ problems with progress, complexity analysis, and practice session logging</li>
+        <li>✓ <strong>System Design Mastery:</strong> 15 curated topics with practice tracking</li>
+        <li>✓ <strong>Behavioral Storytelling:</strong> STAR format story manager with practice counters</li>
+        <li>✓ <strong>Daily Task Planning:</strong> 50+ pre-built daily tasks with real-time progress tracking</li>
+        <li>✓ <strong>Study Roadmap:</strong> 12-week curriculum with weekly goals and milestones</li>
+      </ul>
+
+      <h4 class="text-xl font-bold mt-6 mb-3">📊 Real-Time Analytics</h4>
+      <ul class="space-y-2 mb-4 text-gray-700">
+        <li>✓ Dashboard with multi-chart visualization</li>
+        <li>✓ Problem difficulty breakdown</li>
+        <li>✓ Weekly progress trends</li>
+        <li>✓ Study streak tracking</li>
+        <li>✓ Completion percentages across all categories</li>
+      </ul>
+
+      <h4 class="text-xl font-bold mt-6 mb-3">⚡ Seamless Experience</h4>
+      <ul class="space-y-2 mb-6 text-gray-700">
+        <li>✓ HTMX-powered real-time updates (no page reloads)</li>
+        <li>✓ Auto-save features for notes and progress</li>
+        <li>✓ Mobile-responsive design</li>
+        <li>✓ Zero configuration—everything pre-seeded and ready</li>
+      </ul>
+
+      <div class="bg-gray-100 border-l-4 border-blue-600 p-6 my-6 italic">
+        "Most engineers fail at interview prep not because they can't code—they can. They fail because they're unprepared, unorganized, and unfocused," says Harsha. "The SDE Prep Tracker fixes that. It's like having a personal interview coach that keeps you on track, shows you exactly where you stand, and tells you when you're ready."
+      </div>
+
+      <p class="mb-4">The tool is live now and completely free to use. It's built with FastAPI, SQLAlchemy, HTMX, and Tailwind CSS, making it fast, responsive, and ready for production use.</p>
+
+      <p><strong>Availability:</strong> Live at <a href="/tools/sde-prep" class="text-blue-600 hover:underline">fullstackpm.tech/tools/sde-prep</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <h2 class="text-4xl font-bold mb-8">❓ Frequently Asked Questions</h2>
+
+    <div class="space-y-6">
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-bold mb-2">Why did you build this?</h3>
+        <p class="text-gray-700">I interviewed at multiple tech companies and realized the biggest bottleneck wasn't ability to solve problems—most engineers can. It was organization and tracking. I built this to create one place where you can see your entire interview preparation journey.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-bold mb-2">Who is this for?</h3>
+        <p class="text-gray-700">Anyone preparing for software engineering interviews: new grads, bootcamp graduates, career changers, and experienced engineers prepping for new roles at BigTech companies.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-bold mb-2">Can I use this if I'm already mid-interview prep?</h3>
+        <p class="text-gray-700">100%. The tool works whether you're starting from scratch, already prepping, or weeks in. You can jump to any section and use what's relevant to you.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-bold mb-2">How long does it take to prep?</h3>
+        <p class="text-gray-700">Typical timelines: Full-time (40 hrs/week) = 6-8 weeks. Part-time (20 hrs/week) = 12 weeks. Very part-time (10 hrs/week) = 20+ weeks.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-bold mb-2">Is this tool free?</h3>
+        <p class="text-gray-700">Yes, completely free. It's built and maintained as part of my portfolio. No ads, no paywalls, no premium tiers.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-bold mb-2">Will this actually help me get hired?</h3>
+        <p class="text-gray-700">This tool can't guarantee job offers, but it will help you prepare comprehensively, show you exactly where you stand, give you accountability, and build confidence through visible progress. If you do the work, you'll be significantly better prepared than 90% of other candidates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="mt-16 pt-8 border-t border-gray-300 text-center">
+    <h2 class="text-4xl font-bold mb-6">🎯 Start Your Interview Prep Journey</h2>
+    <p class="text-lg mb-8 text-gray-700">No account. No payment. Just 12 weeks of structured preparation to land your dream job.</p>
+
+    <a href="/tools/sde-prep/dashboard" class="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">
+      Go to Dashboard →
+    </a>
+
+    <p class="text-gray-600 mt-8">Good luck. You've got this. 🚀</p>
+  </section>
+
+</div>
+{% endblock %}
