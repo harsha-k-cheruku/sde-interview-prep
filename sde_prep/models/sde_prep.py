@@ -21,7 +21,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 
-from app.database import Base
+from sde_prep.database import Base
 
 
 class DifficultyEnum(str, Enum):

@@ -6,9 +6,9 @@ import json
 from datetime import datetime
 from typing import Iterable
 
-from app.database import SessionLocal, init_db
-from app.models.user import User
-from app.models.sde_prep import (
+from sde_prep.database import SessionLocal, init_db
+from sde_prep.models.user import User
+from sde_prep.models.sde_prep import (
     BehavioralStory,
     DailyTask,
     DifficultyEnum,

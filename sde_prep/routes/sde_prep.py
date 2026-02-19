@@ -11,9 +11,9 @@ from fastapi.templating import Jinja2Templates
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
-from app.config import settings
-from app.database import get_db
-from app.models.sde_prep import (
+from sde_prep.config import settings
+from sde_prep.database import get_db
+from sde_prep.models.sde_prep import (
     BehavioralStory,
     DailyLog,
     DailyTask,

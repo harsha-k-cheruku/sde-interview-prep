@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}SDE Interview Prep Tracker{% endblock %}</title>
+  <meta name="description" content="{% block description %}SDE Interview Prep Tracker - Comprehensive interview preparation platform{% endblock %}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/static/img/FSPM.png">
+
+  <!-- Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="/static/css/custom.css">
+  <link rel="stylesheet" href="/static/css/sde-prep.css">
+
+  <!-- Dark mode -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  {% block head %}{% endblock %}
+</head>
+<body class="min-h-screen font-sans antialiased"
+      style="background-color: var(--color-bg-primary); color: var(--color-text-primary);">
+
+  <!-- Main content -->
+  <main class="mx-auto max-w-[1200px] px-4 sm:px-6">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@2.0.2" integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwCXuE+cDVtAu2B3crQxD" crossorigin="anonymous"></script>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>
